@@ -10,7 +10,10 @@ const increment = () => {
 }
 
 const decrement = () => {
-    return setCounter(counter - 1);
+    if(counter > 0){
+        return setCounter(counter - 1);
+    }
+       
 }
 
 return (
